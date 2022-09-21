@@ -78,20 +78,26 @@ export const config = {
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "宝宝", "year": "2003", "date": "02-22"},
-        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+        //{"type": "*生日", "name": "宝宝", "year": "2003", "date": "02-22"},
+        //{"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "宝宝", "year": "2003", "date": "02-22"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        //{"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        {"keyword": "love_day", date: "2021-10-23"},
+        {"keyword": "love_day", date: "2021-10-23"},    
+        // 国庆节
+        {"keyword": "guoqing_day", date: "2022-10-01"},
+        // 第一次见面
+        {"keyword": "jianmian_day", date: "2021-10-05"},
+        // 第一次接吻
+        {"keyword": "jiewen_day", date: "2021-10-24"},
         // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
+        //{"keyword": "marry_day", date: "2022-09-09"},
         // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+        //{"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
     {
@@ -185,11 +191,11 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "宝宝", "year": "2003", "date": "02-22", isShowAge: true},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+    //{"type": "*生日", "name": "宝宝", "year": "2003", "date": "02-22", isShowAge: true},
+    //{"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {"type": "生日", "name": "宝宝", "year": "2003", "date": "02-22", isShowAge: true},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    {"type": "生日", "name": "亲爱的宝宝", "year": "2003", "date": "02-22", isShowAge: true},
+    //{"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -210,10 +216,13 @@ export const config = {
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
     {"keyword": "love_day", date: "2021-10-23"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2022-09-09"},
-    // 退伍日
-    {"keyword": "ex_day", date: "2022-09-10"},
+    // 国庆节
+    {"keyword": "guoqing_day", date: "2022-10-01"},
+    // 第一次见面
+    {"keyword": "jianmian_day", date: "2021-10-05"},
+    // 第一次接吻
+    {"keyword": "jiewen_day", date: "2021-10-24"},
+    
     // 你可以不断按格式往下增加
     // ...
   ],
